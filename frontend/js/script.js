@@ -3,6 +3,16 @@ document.getElementById("send-button").addEventListener("click", function () {
   sendMessageToChatbot(userInput);
 });
 
+document
+  .getElementById("user-input")
+  .addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      const userInput = document.getElementById("user-input").value;
+      sendMessageToChatbot(userInput);
+      //console.log("나는 엔터를 입력 받았따!");
+    }
+  });
+
 function sendMessageToChatbot(message) {
   if (message.trim() === "") {
     return;

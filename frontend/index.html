@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-        #chat-container {
-            width: 80%;
-            margin: auto;
-            max-width: 600px;
-            height: 100vh;
-        }
+      #chat-container {
+        width: 80%;
+        margin: auto;
+        max-width: 600px;
+        height: 100vh;
+      }
 
-        #chat-box {
-            height: 80%;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
-            overflow-y: scroll;
-        }
-
+      #chat-box {
+        height: 80%;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+      /*
         #user-input {
             width: 80%;
         }
+        */
+      #user-input {
+        background-color: rgba(217, 217, 227, 0.8);
+        border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+        border-radius: 9999px;
+        border-width: 1px;
+        width: 80%;
+        height: 30px;
+      }
 
-        #send-button {
-            width: 100px;
-        }
+      #send-button {
+        background-color: rgba(217, 217, 227, 0.8);
+        width: 100px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="chat-container">
-        <div id="chat-box"></div>
-        <div id="chat-prompt">
-            <input type="text" id="user-input" placeholder="메세지를 입력하세요.">
-            <button id="send-button">보내기</button>
-        </div>
-
+      <div id="chat-box"></div>
+      <div id="chat-prompt">
+        <input type="text" id="user-input" placeholder="메세지를 입력하세요." />
+        <button id="send-button">보내기</button>
+      </div>
     </div>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
