@@ -7,6 +7,7 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        background-color: #eee;
       }
 
       #chat-container {
@@ -22,6 +23,8 @@
         margin-bottom: 10px;
         padding: 10px;
         overflow-y: scroll;
+        background-color: white;
+        border-radius: 8px;
       }
       /*
         #user-input {
@@ -33,14 +36,26 @@
         border-color: rgba(255, 255, 255, var(--tw-border-opacity));
         border-radius: 9999px;
         border-width: 1px;
-        width: 80%;
-        height: 30px;
+        width: 98%;
+        height: 40px;
+        padding-left: 10px;
+        padding-top: 10px;
       }
 
       #send-button {
-        background-color: rgba(217, 217, 227, 0.8);
-        width: 100px;
+        background-color: black;
+        color: white;
+        width: 15%;
+        height: 45px;
+        float: right;
+        display: none;
       }
+
+      /*
+      strong {
+        background-color: red;
+      }
+      */
     </style>
   </head>
 
@@ -48,7 +63,14 @@
     <div id="chat-container">
       <div id="chat-box"></div>
       <div id="chat-prompt">
-        <input type="text" id="user-input" placeholder="메세지를 입력하세요." />
+        <textarea
+          type="text"
+          id="user-input"
+          placeholder="메세지를 입력하세요."
+          rows="30"
+          cols="10"
+          style="font-size: 1.6em; resize: none"
+        ></textarea>
         <button id="send-button">보내기</button>
       </div>
     </div>
