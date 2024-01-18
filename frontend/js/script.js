@@ -35,8 +35,7 @@ document
     if (event.key === "Enter" && event.shiftKey) {
       event.preventDefault();
       const userInput = document.getElementById("user-input");
-      userInput.value += "\n";
-      userInput.style.height += 100 + "px";
+      userInput.style.height = 100 + "px";
       //userInput.style.height = auto;
       userInput.style.borderRadius = 8 + "px";
       // console.log("나는 쉬프트와 엔터를 입력 받았다!");
@@ -78,12 +77,16 @@ function updateChatBox(sender, message) {
     height: 15%;
     padding: 8px;
     border-radius: 8px;
+    box-shadow: 5px 8px #d6d6d6;
+    max-width: 700px;
+
     "><strong style="
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
     padding-bottom: 15px;
     padding-left: 5px;
+    
     ">${sender}:</strong> ${message}</p><br>`;
     // console.log(typeof message);
 
@@ -92,13 +95,13 @@ function updateChatBox(sender, message) {
     //console.log("사람의 답변입니다");
   } else {
     chatBox.innerHTML += `<p style="
-    position: relative;
-    
-    display: block;
+   
     border: 1px solid #444;
     height: 15%;
     width: 100%;
     border-radius: 8px;
+    box-shadow: -5px 8px #d6d6d6;
+    
 
     ">
     <strong style="
