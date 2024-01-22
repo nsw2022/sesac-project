@@ -22,21 +22,33 @@ div.static {
 }
 
 div.relative {
+  position: relative;
+  right: -500px;
   /* 코드 작성 */
   background: RoyalBlue;
 }
 
 div.fixed {
+  position: fixed;
+  left: 20px;
+  top: 150px;
   /* 코드 작성 */
   background: IndianRed;
 }
 
 div.absolute {
+  position: absolute;
+  top: 20px;
+  right: 799px;
   /* 코드 작성 */
   background: ForestGreen;
 }
 
 div.sticky {
+  /*
+  position: sticky;
+  top: 0px;
+  */
   /* 코드 작성 */
   background: PaleGoldenRod;
 }

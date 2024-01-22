@@ -21,7 +21,7 @@ responses = {
 }
 
 
-@app.post("/chat")
+@app.get("/chat")
 async def chat(user_input: Optional[str] = None):
     if user_input is None:
         return {"message": "입력된 메시지가 없습니다."}

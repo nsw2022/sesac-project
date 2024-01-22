@@ -35,7 +35,11 @@ document
     if (event.key === "Enter" && event.shiftKey) {
       event.preventDefault();
       const userInput = document.getElementById("user-input");
-      userInput.style.height = 100 + "px";
+      userInput.style.height += 100 + "px";
+      /*
+      let scHeight = event.target.scrollHeight;
+      userInput.style.height = `${scHeight}px`;
+      */
       //userInput.style.height = auto;
       userInput.style.borderRadius = 8 + "px";
       // console.log("나는 쉬프트와 엔터를 입력 받았다!");
