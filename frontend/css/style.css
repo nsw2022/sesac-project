@@ -1,3 +1,127 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -58,7 +182,6 @@ h1 {
   top: 60px;
   height: 300px;
   width: 200px;
-  float: left;
   border: 1px solid #ddd;
   padding: 10px;
 }
@@ -73,6 +196,7 @@ h1 {
 }
 
 #side-nav li a {
+  display: block;
   /* 문제4: 아래 패딩이 이 아이템들에게는 적용되지 않습니다. 패딩을 가질 수 있도록 해주세요. */
   /* 참고: reset.css: https://meyerweb.com/eric/tools/css/reset/ */
   display: block;
@@ -96,6 +220,8 @@ main {
   max-width: 600px;
   height: calc(80vh - 60px);
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #chat-box {
@@ -129,6 +255,7 @@ main {
   /* 문제5: 이미지들의 크기를 조정할 수 있으면서 가로로 정렬될 수 있도록 만들어 보세요. */
   display: inline-block;
   width: 200px;
+  margin: 10px;
   /* 문제6: 이미지들끼리 서로 10px씩 떨어질 수 있도록 만들어 보세요. */
   padding: 10px;
 }
@@ -151,5 +278,10 @@ footer {
 }
 
 section {
+  display: flex;
   border: solid 1px;
+  justify-content: space-between;
+}
+#chat-wrapper {
+  width: 80%;
 }
