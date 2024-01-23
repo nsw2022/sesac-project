@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatbot</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
 
-      #chat-container {
-        width: 80%;
-        margin: auto;
-        max-width: 600px;
-        height: 100vh;
-      }
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도봉이와의 대화방</title>
+<link href="css/style.css" rel="stylesheet">
+</link>
+</head>
 
-      #chat-box {
-        height: 80%;
-        border: 1px solid #ddd;
-        margin-bottom: 10px;
-        padding: 10px;
-        overflow-y: scroll;
-      }
-      /*
-        #user-input {
-            width: 80%;
-        }
-        */
-      #user-input {
-        background-color: rgba(217, 217, 227, 0.8);
-        border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-        border-radius: 9999px;
-        border-width: 1px;
-        width: 80%;
-        height: 30px;
-      }
+<body>
 
-      #send-button {
-        background-color: rgba(217, 217, 227, 0.8);
-        width: 100px;
-      }
-    </style>
-  </head>
+    <body>
+        <header>
+            <nav id="header-nav">
+                <ul>
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#news">도봉이 근황 보기</a></li>
+                    <li><a href="#contact">도봉이 만든 사람 소개</a></li>
+                    <li><a href="#about">도봉이는...</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <body>
-    <div id="chat-container">
-      <div id="chat-box"></div>
-      <div id="chat-prompt">
-        <input type="text" id="user-input" placeholder="메세지를 입력하세요." />
-        <button id="send-button">보내기</button>
-      </div>
-    </div>
+        <main>
+            <section>
+                <aside id="side-nav">
+                    <h1> 도봉이 친구들 </h1>
+                    <ul>
+                        <li><a href="#link1">노원이</a></li>
+                        <li><a href="#link2">남구</a></li>
+                        <li><a href="#link3">북구북구</a></li>
+                        <li><a href="#link4">산이</a></li>
+                    </ul>
+                </aside>
+                <div id='chat-wrapper'>
+                    <h1 id="chat-title">도봉이와의 대화방</h1>
+                    <div id="chat-container">
+                        <div id="chat-box"></div>
+                        <div id="chat-prompt">
+                            <input type="text" id="user-input" placeholder="메세지를 입력하세요.">
+                            <button type="submit" id="send-button">보내기</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <h1>도봉이의 갤러리</h1>
+            <div id="gallery">
+                <img src="https://picsum.photos/200?random=1">
+                <img src="https://picsum.photos/200?random=2">
+                <img src="https://picsum.photos/200?random=3">
+                <img src="https://picsum.photos/200?random=4">
+                <img src="https://picsum.photos/200?random=5">
+                <img src="https://picsum.photos/200?random=6">
+                <img src="https://picsum.photos/200?random=7">
+                <img src="https://picsum.photos/200?random=9">
+                <img src="https://picsum.photos/200?random=10">
+                <img src="https://picsum.photos/200?random=11">
+                <img src="https://picsum.photos/200?random=12">
+                <img src="https://picsum.photos/200?random=13">
+                <img src="https://picsum.photos/200?random=14">
+
+            </div>
+        </main>
+        <footer>
+            <p>Saltlux © 2024</p>
+            <p>서울특별시 도봉구 창동 새싹 씨드 캠프</p>
+            <p>만든 이: LLM반 친구들</p>
+        </footer>
+    </body>
     <script src="js/script.js"></script>
   </body>
 </html>
